@@ -20,7 +20,7 @@ routes.post('/feedbacks', async (req, res) => {
           type, comment, screenshot
      })
 
-
+     console.log('Enviado com sucesso!')
 
      return res.status(201).send()
 })
