@@ -3,13 +3,9 @@ import { Widget } from "./components/Widget"
 
 
 export function App() {
-  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={`${darkMode && 'dark'} flex gap-2`}>
-      <button onClick={() => setDarkMode(!darkMode)}>
-          Darkmode
-      </button>
+    <div className="bg-backgroundLight-100 dark:bg-backgroundDark-900">
       <Widget />
     </div>
   )

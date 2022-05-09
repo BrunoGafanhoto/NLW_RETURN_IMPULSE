@@ -37,7 +37,7 @@ export const ScreenshotButton = ({ onScreenshotTook, screenshot }: ScreenshotBut
           <button
                type="button"
                onClick={handleTakeScreenshot}
-               className="p-2 rounded-[4px] bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 "
+               className="p-2 rounded-[4px] bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-100 text-zinc-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 "
           >
 
                {isTakingScreenshot ? <Loading /> : <Camera className="w-6 h-6" />}

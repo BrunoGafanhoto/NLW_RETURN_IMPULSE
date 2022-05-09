@@ -43,7 +43,7 @@ export const WidgetForm = () => {
     }
 
     return (
-        <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col shadow-lg items-center w-[calc(100vw-2rem)] sm:w-auto gap-2">
+        <div className="bg-white dark:bg-zinc-900 dark:text-zinc-100 text-zinc-800  p-4 relative rounded-2xl mb-4 flex flex-col shadow-lg items-center w-[calc(100vw-2rem)] sm:w-auto gap-2">
 
             {
                 feedbackSent ? (
@@ -63,7 +63,7 @@ export const WidgetForm = () => {
                 )
             }
 
-            <footer className='text-xs text-neutral-400'>
+            <footer className='text-xs text-zinc-500 dark:text-zinc-400 '>
                 Feito com ♥ pela <a className="underline underline-offset-2" href="https://rocketseat.com.br">Rocketseat</a>
             </footer>
         </div>
