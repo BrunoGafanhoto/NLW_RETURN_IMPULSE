@@ -12,12 +12,12 @@ const transport = nodemailer.createTransport({
 
 
 export class NodemailerMailAdapter implements MailAdapter {
-     async sendMail({ subject, body }: SendmailData) {
-
+     async sendMail({ subject, body, attachments}: SendmailData) {
           await transport.sendMail({
                to: "projetointegrador792@gmail.com",
                from: "Equipe Feedget <oi@feedget.com>",
                subject,
+               attachments,
                html: body
           })
      };

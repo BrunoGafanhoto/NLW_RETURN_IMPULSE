@@ -26,18 +26,18 @@ export const Widget = () => {
 
      return (
           <>
-          {/* <div className="container" >
+          <div className="container" >
                <div className="groupBox" ref={group_box}>
                     <div className="box">1</div>
                </div>
              
                <div className="box four" ref={box_ref} onClick={handleClick}>4</div>
-          </div> */}
+          </div>
           <Popover className="absolute bottom-4 right-5 flex flex-col items-end">
                <Popover.Panel>
                     <WidgetForm />
                </Popover.Panel>
-               <Popover.Button className="bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group">
+               <Popover.Button className="dark:bg-white bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group">
                     <ChatTeardropDots className="w-6 h-6" />
                     <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear">
                          <span className="pl-2">
